@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Awesome Game Hub 🕹️</h1>
+    </header>
+
+    <main class="game-list">
+        <a href="#tictactoe-game" class="game-card"><h2>Tic-Tac-Toe</h2></a>
+        <a href="#sliding-puzzle-game" class="game-card"><h2>Sliding Puzzle</h2></a>
+        <a href="#rps-game" class="game-card"><h2>Rock, Paper, Scissors</h2></a>
+    </main>
+    
+    <section id="tictactoe-game" class="game-area">
+        <h3>Tic-Tac-Toe</h3>
+        <div class="tictactoe-container">
+            <div id="tictactoe-board" class="board">
+                </div>
+            <div id="tictactoe-status" class="status">Player X's Turn</div>
+            <button id="tictactoe-reset-btn">Restart Game</button>
+        </div>
+    </section>
+
+    <section id="sliding-puzzle-game" class="game-area">
+        <h3>Sliding Puzzle (3x3)</h3>
+        <div id="puzzle-message" class="status"></div>
+        <div class="puzzle" id="puzzle-board"></div>
+        <button id="puzzle-shuffle-btn">Shuffle</button>
+    </section>
+
+    <section id="rps-game" class="game-area">
+        <h3>Rock, Paper, Scissors Game</h3>
+        <div class="choices">
+            <button data-choice="rock">✊ Rock</button>
+            <button data-choice="paper">✋ Paper</button>
+            <button data-choice="scissors">✌️ Scissors</button>
+        </div>
+        <div id="result" class="status">Make a choice!</div>
+        <p>Score: Player <span id="player-score">0</span> | Computer <span id="computer-score">0</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
