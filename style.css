@@ -138,3 +138,44 @@ button:hover {
 #rps-game .choices button:hover {
     background-color: #0056b3;
 }
+/* ================================
+   Game Console Style Box
+================================ */
+
+.console-box {
+    position: relative;
+    background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
+    border-radius: 22px;
+    padding: 40px 30px 60px;
+    max-width: 650px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Top speaker line */
+.console-box::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 6px;
+    background: #555;
+    border-radius: 10px;
+}
+
+/* Console controls (buttons) */
+.console-controls {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.console-btn {
+    width: 14px;
+    height: 14px;
+    background: #4CAF50;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
+}
