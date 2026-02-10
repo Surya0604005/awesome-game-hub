@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO TITLE -->
+    <title>Awesome Game Hub – Simple & Fun Mini Games Online</title>
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Awesome Game Hub lets you play simple and fun mini games like Tic Tac Toe, Sliding Puzzle, and Rock Paper Scissors online for free.">
+    <meta name="keywords" content="awesome game hub, mini games, free mini games, online games, tic tac toe game, sliding puzzle, rock paper scissors">
+    <meta name="author" content="Surya Teja">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="Awesome Game Hub">
+    <meta property="og:description" content="Play simple and fun mini games online for free.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body>
+    <header>
+        <h1>🎮 Awesome Game Hub 🕹️</h1>
+        <p>Simple & Fun Mini Games Online</p>
+    </header>
+
+    <main class="game-list">
+        <a href="#tictactoe-game" class="game-card"><h2>Tic-Tac-Toe</h2></a>
+        <a href="#sliding-puzzle-game" class="game-card"><h2>Sliding Puzzle</h2></a>
+        <a href="#rps-game" class="game-card"><h2>Rock, Paper, Scissors</h2></a>
+    </main>
+    
+    <section id="tictactoe-game" class="game-area">
+        <h3>Tic-Tac-Toe</h3>
+        <div class="tictactoe-container">
+            <div id="tictactoe-board" class="board"></div>
+            <div id="tictactoe-status" class="status">Player X's Turn</div>
+            <button id="tictactoe-reset-btn">Restart Game</button>
+        </div>
+    </section>
+
+    <section id="sliding-puzzle-game" class="game-area">
+        <h3>Sliding Puzzle (3x3)</h3>
+        <div id="puzzle-message" class="status"></div>
+        <div class="puzzle" id="puzzle-board"></div>
+        <button id="puzzle-shuffle-btn">Shuffle</button>
+    </section>
+
+    <section id="rps-game" class="game-area">
+        <h3>Rock, Paper, Scissors Game</h3>
+        <div class="choices">
+            <button data-choice="rock">✊ Rock</button>
+            <button data-choice="paper">✋ Paper</button>
+            <button data-choice="scissors">✌️ Scissors</button>
+        </div>
+        <div id="result" class="status">Make a choice!</div>
+        <p>Score: Player <span id="player-score">0</span> | Computer <span id="computer-score">0</span></p>
+    </section>
+
+    <!-- FOOTER (Trust + SEO) -->
+    <footer style="margin-top: 40px;">
+        <a href="about.html">About</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="contact.html">Contact</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
