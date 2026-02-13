@@ -26,7 +26,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
 
-  <!--google verification code-->
+   <!--google verification code-->
 <meta name="google-site-verification" content="google7f30f682af38fd9b" />
 
   <!--structured data for site name-->
@@ -38,6 +38,7 @@
   "url": "https://surya0604005.github.io/awesome-game-hub/"
 }
 </script>
+
 
 </head>
 
@@ -88,8 +89,14 @@
     </footer>
 
     <script src="script.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("service-worker.js")
+      .then(() => console.log("Service Worker registered"))
+      .catch(err => console.log("Service Worker error:", err));
+  }
+</script>
+
 </body>
 </html>
-
-
-
