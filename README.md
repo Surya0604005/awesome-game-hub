@@ -75,9 +75,9 @@ open index.html
 
 ***Surya Teja Katta***
 
--🔗 GitHub: https://github.com/Surya0604005
+🔗 GitHub: https://github.com/Surya0604005
 
--🔗 LinkedIn: https://www.linkedin.com/in/surya-teja-katta-816614300
+🔗 LinkedIn: https://www.linkedin.com/in/surya-teja-katta-816614300
 
 # 📄 License
 
